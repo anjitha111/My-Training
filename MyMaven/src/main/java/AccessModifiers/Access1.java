@@ -18,6 +18,7 @@ public class Access1 {
 	protected void protectedMethod()
 	{
 		System.out.println(k);
+		System.out.println("New change");
 	}
 	void defaultMethod()
 	{
