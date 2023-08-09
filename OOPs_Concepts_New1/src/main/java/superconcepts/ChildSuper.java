@@ -8,7 +8,7 @@ public class ChildSuper extends ParentSuper {
 	void print()
 	{
 		System.out.println("Value of a and b are " +a +" " +b);
-		System.out.println("Value of a and b in parent class are " +super.a+ " and " +super.b);
+		System.out.println("Value of a and b in parent class are " +super.a+ " and " +super.b);//Printing parent class variables using super keyword.
 		super.add();//Calling parent method from child class
 		this.subtraction();//To call the same class method.If this() is not used,sometimes it may throw some error.
 
