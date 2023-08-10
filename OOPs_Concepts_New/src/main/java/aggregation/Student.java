@@ -3,8 +3,7 @@ package aggregation;
 public class Student {
 	int rnum;
 	String name;
-	Address address;
-	static String collegename;
+	Address address;////Declaring as a global variable.Non-primitive datatype created.
 	
 	public Student (int rnum,String name,Address address)
 	{
