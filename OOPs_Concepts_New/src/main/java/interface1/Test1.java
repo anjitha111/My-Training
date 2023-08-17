@@ -1,6 +1,6 @@
 package interface1;
 
-public interface Test1 {
+public interface Test1{
 
 	public static final int a=100;
 	public abstract void display();//Creating an abstract method
