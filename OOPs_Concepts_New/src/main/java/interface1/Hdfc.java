@@ -15,7 +15,7 @@ public class Hdfc implements Rbi {
 	@Override
 	public void recurringDeposit(int deposit,int dur) {
 		float tot_amt=deposit+(deposit*(1+interest_rate/dur));
-		System.out.println("Maturity amount is "+tot_amt);
+		System.out.println("Maturity amount of recurring deposit is "+tot_amt);
 		
 	}
 
