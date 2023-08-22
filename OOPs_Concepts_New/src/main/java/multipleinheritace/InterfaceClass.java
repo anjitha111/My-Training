@@ -6,12 +6,12 @@ public class InterfaceClass implements FirstInterface,SecondInterface {
 	public static void main(String[] args) {
 		
 		FirstInterface fi=new InterfaceClass();//Constructor name of the class that is used for the implementation of this interface. [current class]
-		fi.display();
+		fi.display();// Calling first interface's method using it's own object.
 		//fi.show(); //Can call only this interface's method using it's reference and not even this class's method.
 	
-		/*InterfaceClass ic=new InterfaceClass();
-		ic.display();
-		ic.show();*/
+		InterfaceClass ic=new InterfaceClass();
+		ic.display();//Can call the methods of first interface using current class's object.
+		ic.show();//Can call the methods of second interface using current class's object.
 	}
 
 	@Override

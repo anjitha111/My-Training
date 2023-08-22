@@ -25,7 +25,7 @@ public class License {
 		catch(LicenseException e) //We can give Exception class as well.
 		{
 			System.out.println("Inside catch "+e);
-		}
+		}//First this try catch will execute and after that only control goes to the method.
 		System.out.println("After method block.");
 	}
 
