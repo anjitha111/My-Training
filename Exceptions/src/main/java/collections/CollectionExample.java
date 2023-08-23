@@ -26,7 +26,7 @@ public class CollectionExample {
 		System.out.println("Generic Array List elements are "+a);
 		
 		List<Integer> l=new ArrayList();//Creating generic reference of List interface
-		List l1=new ArrayList();//Creating non-generic reference of List interface
+		List l1=new ArrayList();//Creating generic reference of List interface
 		l.add(20);
 		l.add(30);
 		l1.add("Ammu");
