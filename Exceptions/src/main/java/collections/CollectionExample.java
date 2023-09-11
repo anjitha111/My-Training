@@ -3,6 +3,8 @@ package collections;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.swing.text.html.HTMLDocument.Iterator;
+
 public class CollectionExample {
 
 	public static void main(String[] args) 
@@ -34,6 +36,7 @@ public class CollectionExample {
 		l1.add(20.5);
 		System.out.println("Generic List elements are "+l);
 		System.out.println("Non-generic List elements are "+l1);
+		
 	}
 
 }
