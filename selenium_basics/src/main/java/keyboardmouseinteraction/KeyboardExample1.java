@@ -15,7 +15,8 @@ public class KeyboardExample1{
 		driver.manage().window().maximize();
 		WebElement searchbar=driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']"));
 		//searchbar.sendKeys("Latest Lenovo laptops" +Keys.ENTER);// To perform enter in the keyboard.
-		searchbar.sendKeys("Iphone 14 pro max" +Keys.BACK_SPACE);//It will remove the last char.
+		searchbar.sendKeys("Iphone 14 pro max");
+		searchbar.sendKeys(Keys.BACK_SPACE);//It will remove the last char.
 		Thread.sleep(2000);
 		searchbar.sendKeys(Keys.chord(Keys.CONTROL,"A")+Keys.BACK_SPACE);// Cntrl+A action plus clears all text.
 		

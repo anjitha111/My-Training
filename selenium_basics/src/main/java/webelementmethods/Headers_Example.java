@@ -19,18 +19,21 @@ public class Headers_Example {
 				
 				List <WebElement> headers=driver.findElements(By.xpath("//ul[@class='navbar-nav']//li//a"));
 				System.out.println("Size of the list is "+headers.size());// This list consists of 8 webelements.
+				
 				for(int index=0;index<headers.size();index++)
 				{
-					String text=headers.get(index).getText();// To print the text label.
-					System.out.println("Progress bar label is " +text);
+					System.out.println("Progress bar label is ");
+					System.out.println(headers.get(index).getText());
 					String attribute=headers.get(index).getAttribute("class");
 					System.out.println("Attribute value is "+attribute);
 				
 				}
+				System.out.println("Progress bar items are ");
 				for(WebElement element:headers) // For List,Strings,Array
 				{
 					String text1=element.getText();
-					System.out.println("Progress bar item is " +text1);
+					System.out.println(text1);
+					
 				}
 				List<WebElement>atag=driver.findElements(By.tagName("a"));// It will store all the a tag webelements to a list.
 				System.out.println("Size of atag is "+atag.size());
@@ -41,7 +44,7 @@ public class Headers_Example {
 					String string2=element.getAttribute("class");
 					System.out.println("Class attribute of a tag is "+string2);
 				}
-				driver.quit();
+				
 	}
 
 }
