@@ -16,7 +16,7 @@ public class Java_Script_Executor {
 		driver.get("https://www.meesho.com/");
 		driver.manage().window().maximize();
 
-		JavascriptExecutor js=(JavascriptExecutor) driver;//Typecasting
+		JavascriptExecutor js=(JavascriptExecutor) driver;//Creating the JavascriptExecutor interface object by Type casting.	
 		js.executeScript("alert ('Anjitha')"); // To get the alert.	
 		driver.switchTo().alert().accept();
 		
