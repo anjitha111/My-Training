@@ -9,6 +9,7 @@ public class SetExample {
 	{
 			//Generic Array list.
 		Set<Integer> set2 = new LinkedHashSet();//Generic Array list.
+
 		set2.add(1);
 		set2.add(2);
 		System.out.println("Non-Generic integer set elements are "+set2);

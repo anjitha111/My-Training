@@ -15,5 +15,10 @@
 		</dependency>
 
 
+		<dependency>
+			<groupId>com.obsqura</groupId>
+			<artifactId>ExcelRead</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 </project>
