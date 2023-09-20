@@ -21,11 +21,13 @@ public class AlertExample {
 		Thread.sleep(1000);
 		System.out.println("First alert message is "+driver.switchTo().alert().getText());//Prints the alert message.
 		driver.switchTo().alert().accept();// To close the alert.
+		
 		System.out.println("Successfully closed the alert box");// To check whether it is accespted or else give thread sleep or wait.
 		
 		js_confirm.click();
 		Thread.sleep(1000);
 		System.out.println("Second alert message is " +driver.switchTo().alert().getText());// Prints the alert message
+		
 		driver.switchTo().alert().dismiss();//To click the cancel button.
 		
 		js_prompt.click();

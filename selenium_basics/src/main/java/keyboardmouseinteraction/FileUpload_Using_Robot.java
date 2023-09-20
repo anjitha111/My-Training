@@ -29,7 +29,7 @@ public class FileUpload_Using_Robot {
 		String path="D:\\Files\\Image.png";
 		//choosefile.click();
 		
-		StringSelection ss = new StringSelection(path);//Type casting
+		StringSelection ss = new StringSelection(path);
 		//Converts the String file name to a format or object which can be easily transferred to the file upload window which we get on clicking “Choose File” button of any website. 
 		//At first, we need to import the following files in our program: import java. awt.
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null); // To set the clip board. Ctl+C
