@@ -9,7 +9,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class WindowSwitchingUsingForEach {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+	{
 		System.setProperty("webdriver.chrome.driver", "D:\\ChromeDriver\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://the-internet.herokuapp.com/windows");

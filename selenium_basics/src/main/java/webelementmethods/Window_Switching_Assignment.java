@@ -26,6 +26,7 @@ public class Window_Switching_Assignment {
 		Iterator<String> itr = windows_id.iterator();
 		while (itr.hasNext()) {
 			String child_window = itr.next();// Fetch the data from the current position and points to the next.
+			
 			if (parent_window.equals(child_window)) {
 				System.out.println("No need to switch");
 			} else {

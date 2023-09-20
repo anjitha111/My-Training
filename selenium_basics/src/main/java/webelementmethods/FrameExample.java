@@ -13,7 +13,6 @@ public class FrameExample {
 		driver.get("https://the-internet.herokuapp.com/nested_frames");
 		driver.manage().window().maximize();
 		
-		
 		driver.switchTo().frame(0); //To get switched to zeroth frame.
 		driver.switchTo().frame("frame-left");//For getting the left-frames.
 		WebElement left=driver.findElement(By.xpath("//body[contains(text(),'LEFT')]"));//No visibility inside the frame.We will get No such element exception.

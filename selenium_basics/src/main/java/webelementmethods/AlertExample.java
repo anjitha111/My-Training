@@ -34,7 +34,7 @@ public class AlertExample {
 		driver.switchTo().alert().sendKeys("Anjitha");
 		Thread.sleep(2000);
 		System.out.println("Third alert message is " +driver.switchTo().alert().getText());
-		driver.switchTo().alert().accept();// To close the alert.
+		driver.switchTo().alert().accept();// To close the alert box.
 		
 	}
 

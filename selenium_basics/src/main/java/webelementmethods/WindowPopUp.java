@@ -23,12 +23,11 @@ public class WindowPopUp {
 		Set<String> window_ids=driver.getWindowHandles();//Return set of string containing ids of all open tabs.
 		//It contains parent and children.The set contains parent and child elements,but not in any particular order.
 		System.out.println("Size of the set is "+window_ids.size());
-		
+	
 		String parent_window=driver.getWindowHandle();//Returns the id of window which is in current control. getWindowHandles returns the id of all open tabs.
 		System.out.println("ID is "+parent_window);// It will print different IDs when each time driver.get is executed.
 
 		Iterator<String> iterate=window_ids.iterator();
-		
 		while(iterate.hasNext())
 		{
 			String child_window=iterate.next();//Taking each elements one by one.
