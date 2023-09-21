@@ -22,19 +22,21 @@ public class WebTableExample {
 		
 		//thead:Table heading
 		//To print all title headings
-		
+		System.out.println("Title headings : ");
+		System.out.println("......................");
 		for(WebElement element:allheadings)
 		{
-			System.out.println("Title heading : "+element.getText());
+			System.out.println(element.getText());
 		}
 		
 		List<WebElement> footerheadings=driver.findElements(By.xpath("//table[@id='dtBasicExample']//tfoot//tr[1]//th"));//tfoot : Table footer
 		
 		//To print all footer headings.
-		
+		System.out.println("Footer headings : ");
+		System.out.println("......................");
 		for(WebElement element:footerheadings)
 		{
-			System.out.println("Footer heading : "+element.getText());
+		 System.out.println(element.getText());
 		}
 		
 		WebElement cedric_position=driver.findElement(By.xpath("//table[@id='dtBasicExample']//tbody//tr[4]//td[2]"));//tr-Table row,td-Table column tbody-table body.
@@ -43,17 +45,20 @@ public class WebTableExample {
 		
 			List<WebElement> names=driver.findElements(By.xpath("//table[@id='dtBasicExample']//tbody//tr//td[1]"));
 			//To print all names.
+			System.out.println("Displayed names are : ");
+			System.out.println("......................");
 			for(WebElement element:names)
 			{
-				System.out.println("Name : "+element.getText());
+				System.out.println(element.getText());
 			}
 			//To print the details of Herrod.
-			
+			System.out.println("Herrod Chandler's details : ");
+			System.out.println("......................");
 			List<WebElement> herrod_chandler=driver.findElements(By.xpath("//table[@id='dtBasicExample']//tbody//tr[7]//td"));
 			
 			for(WebElement element:herrod_chandler)
 			{
-				System.out.println("Herrod Chandler's details :  "+element.getText());
+				 System.out.println(element.getText());
 			}
 	}
 

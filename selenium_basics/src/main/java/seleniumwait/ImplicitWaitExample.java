@@ -11,7 +11,6 @@ public class ImplicitWaitExample {
 
 	public static void main(String[] args) throws InterruptedException
 	{
-	
 			System.setProperty("webdriver.chrome.driver", "D:\\ChromeDriver\\chromedriver.exe");
 			WebDriver driver = new ChromeDriver();
 			driver.get("https://the-internet.herokuapp.com/dynamic_loading/2");
